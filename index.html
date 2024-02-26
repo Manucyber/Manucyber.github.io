@@ -1,15 +1,30 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protezione Password</title>
+    <script>
+        function controllaPassword() {
+            // Password predefinita (da cambiare)
+            const passwordCorretta = "password123";
+
+            // Chiedi all'utente di inserire la password
+            const passwordInserita = prompt("Inserisci la password:");
+
+            // Controlla se la password è corretta
+            if (passwordInserita === passwordCorretta) {
+                alert("Password corretta! Accesso consentito.");
+            } else {
+                alert("Password errata. Accesso negato.");
+            }
+        }
+    </script>
+</head>
 <body>
-  <form action="/registrazione" method="post">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-    <br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    <br>
-    <input type="submit" value="Registrati">
-</form>
-<h1>Hello World</h1>
+
+    <!-- Pulsante per attivare il controllo della password -->
+    <button onclick="controllaPassword()">Accedi</button>
+
 </body>
 </html>
