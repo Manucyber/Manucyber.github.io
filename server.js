@@ -25,4 +25,7 @@ app.post('/login', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Il server è in ascolto sulla porta ${port}`);
+    app.post('/login', (req, res) => {
+    // Gestione della richiesta di login
+});
 });
