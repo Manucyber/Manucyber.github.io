@@ -8,10 +8,6 @@ app.use(express.json());
 // Password nascosta lato server (non nel codice sorgente)
 const passwordSegreta = "2024";
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/login.html');
-});
-
 app.post('/login', (req, res) => {
     const { password } = req.body;
 
