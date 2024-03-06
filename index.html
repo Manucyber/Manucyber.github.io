@@ -1,1 +1,326 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <!-- Metadati della pagina -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test HTML 5 con foglio di style</title>
+	
+    <!-- Collegamento alla fonte di Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	
+    <!-- Collegamento al foglio di stile esterno -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+	<!-- Intestazione -->
+	<header>
+		<div class="container">
+			<!-- Logo aziendale -->
+			<div class="logo">
+				<h1 title="Logo aziendale">CIMA</h1>
+			</div>
+			
+			<!-- Navigazione -->
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+                    <li><a href="#">chi sono</a></li>
+					<li><a href="#">Contatti</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- Sezione Hero -->
+	<section class="hero">
+		<div class="container">
+			<!-- Titoli e testo promozionale -->
+			<h2>Benvenuti nel sito della nostra azienda</h2>
+			<h3>Abbiamo una vasta gamma di prodotti e servizi</h3>
+			
+			<!-- Pulsante di chiamata all'azione -->
+			<a title="Scopri di più" href="#" class="button">Scopri di più</a>		
+		</div>
+	</section>
+	
+	<!-- Sezione Servizi -->
+	<section class="services">
+		<!-- Titolo della sezione -->
+		<h2>Servizi</h2>
+		
+		<div class="container">
+			<!-- Singoli servizi -->
+			<div class="column">
+				<h4>Primo servizio</h4>
+				<p>Nullam varius fringilla cursus...</p>
+			</div>
+			<div class="column">
+				<h4>Secondo servizio</h4>
+				<p>Mauris feugiat diam vel purus rutrum commodo...</p>
+			</div>
+			<div class="column">
+				<h4>Terzo servizio</h4>
+				<p>Duis tellus sapien, tempus at vestibulum in...</p>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Sezione Prodotti -->
+	<section class="products">
+		<!-- Titolo della sezione -->
+		<h2>Prodotti</h2>
+		
+		<div class="container">
+			<!-- Singoli prodotti -->
+			<div class="column">
+				<h4>Primo prodotto</h4>
+				<p>Nullam varius fringilla cursus...</p>
+			</div>
+			<div class="column">
+				<h4>Secondo prodotto</h4>
+				<p>Mauris feugiat diam vel purus rutrum commodo...</p>
+			</div>
+			<div class="column">
+				<h4>Terzo prodotto</h4>
+				<p>Duis tellus sapien, tempus at vestibulum in...</p>
+			</div>
+			<div class="column">
+				<h4>Quarto prodotto</h4>
+				<p>Praesent mauris nibh, cursus ut ante...</p>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Sezione Footer -->
+	<footer>
+		<div class="container">
+			<!-- Nome azienda -->
+			<h5>Nome azienda</h5>
+			
+			<!-- Informazioni di copyright -->
+			<p class="copyright">&copy; 2023</p>
+			
+			<!-- Testo aggiuntivo -->
+			<p>Vestibulum rutrum, elit vel aliquam suscipit...</p>	
+		</div>
+	</footer>
+  </body>
+  <!-- Stili CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    /* Stili per il logo */
+    .logo {
+      float: left;
+      padding: 5px;
+      background-color: #f2f2f2;
+    }
+    
+    .logo h1 {
+      margin-left: 60px;
+      text-transform: uppercase;
+      margin-top: -70px;
+      background-color: #f2f2f2;
+      padding: 5px;
+      font-size: 24px;
+      font-weight: 700;
+      color: #000000;
+    }
+    
+    /* Stili per la navigazione */
+    .services, .column h4, .products, .column h4 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-right: 60px;
+      text-transform: uppercase;
+      margin-top: -70px;
+      float: right;
+    }
+    
+    nav ul {
+      list-style: none;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-left: 20px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #000000;
+      position: relative;
+    }
+    
+    nav ul li a:hover {
+      text-decoration: none;
+    }
+    
+    nav ul li a:hover:after {
+      content: '';
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      bottom: -6px;
+      width: calc(100% + 10px);
+      border-bottom: 2px solid #000000;
+    }
+    
+    /* Stili per la sezione Hero */
+    .hero {
+      text-align: left;
+      padding-left: 20px;
+      margin-top: 90px;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 50px 0;
+      padding-bottom: 100px;
+      padding-top: 100px; 
+    } 
+    
+    .hero h2 {
+      text-transform: uppercase;
+      margin-left: 60px;
+      text-align: left;
+      font-size: 36px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 60px;
+    }
+    
+    .hero h3 {
+      margin-left: 60px;
+      text-align: left;
+      font-size: 24px;
+      color: #000000;
+      margin-bottom: 50px;
+    }
+    
+    /* Stili per i pulsanti */
+    .button {
+      text-transform: uppercase;
+      margin-left: -1200px;
+      text-align: left;
+      display: inline-block;
+      padding: 10px;
+      background-color: #000000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .hero a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(0, 0, 0);
+      border: 2px solid black;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    
+    /* Stili per la sezione Servizi */
+    .services h2 {
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: 700;
+      color: #000000;
+      margin-bottom: 40px;
+    }
+    
+    .services .container {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .services .column {
+      margin-bottom: 40px;
+      flex: 1;
+      margin: 0 10px;
+    }
+    
+    /* Stili per la sezione Prodotti */
+    .products {
+      margin-bottom: 0;
+      background-color: #dadada;
+      text-align: center;
+      padding: 50px 0;
+      padding-top: 100px;
+    }
+    
+    .products h2 {
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: 700;
+      color: #000000;
+      margin-bottom: 40px;
+    }
+    
+    .products .container {
+      margin-bottom: 35px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .products .column {
+      background-color: #fff;
+      padding: 20px;
+      flex: 1;
+      margin: 0 10px;
+    }
+    
+    /* Stili per il footer */
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #000000;
+      color: #fff;
+      padding: 20px;
+    }
+    
+    footer h5 {
+      float: left;
+      text-transform: uppercase;
+      font-size: 23px;
+      font-weight: 700;
+    }
+    
+    footer p {
+      float: left;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    
+    footer p.copyright {
+      margin-left: 5px;
+      margin-right: 10px;
+      float: left;
+      font-size: 12px;
+    }
+    
+    .services .column h4, .services .column p, .products .column h4, .products .column p {
+      text-align: center;
+      padding-left: 20px;
+    }
+  </style>
+</html>
 
