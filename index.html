@@ -1,197 +1,202 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="La web agency dell'ITS Lanciano" />
-        <meta name="author" content="ITS Lanciano" />
-        <title>ITS Web Agency</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (versione free)-->
-        <script src="https://use.fontawesome.com/releases/v6.5.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-		<!-- CSS Boostrap -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">		
-        <!-- CSS personalizzato-->
-        <link href="css/style.css" rel="stylesheet" />
-    </head>
-    <body id="top">
-        <!-- Navigation-->
-		<header class="sticky-top">
-			<nav class="navbar navbar-expand-lg text-uppercase" id="mainNav">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="La web agency dell'ITS Lanciano">
+    <meta name="author" content="ITS Lanciano">
+    <title>ITS Web Agency</title>
+	<!-- JS personalizzato -->
+	<!-- JS menu button -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#toggleButton").click(function(){
+				$("#navbarResponsive").toggleClass("show");
+			});
+		});
+	</script>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Font Awesome icons (versione free)-->
+    <script src="https://use.fontawesome.com/releases/v6.5.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS personalizzato-->
+    <link href="style.css" rel="stylesheet">
+	</head>
+	<body id="top">
+		<!-- Navigation-->
+		<header class="custom-bg-color sticky-top">
+			<nav class="navbar navbar-expand-lg navbar-dark">
 				<div class="container">
-					<a class="navbar-brand" href="#top">ITS Web Agency</a>
-					<button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Attiva menu navigazione">
-						Menu
+					<a href="#top" class="navbar-brand text-uppercase"><strong>ITS Web Agency</strong></a>
+					<button id="toggleButton" type="button" class="navbar-toggler bg-green-aqua text-uppercase text-white" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+						<strong>Menu</strong> &nbsp;
 						<i class="fas fa-bars"></i>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarResponsive">
+					<div id="navbarResponsive" class="collapse navbar-collapse">
 						<ul class="navbar-nav ms-auto">
-							<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#progetti">Galleria progetti</a></li>
-							<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#chi-siamo">Chi siamo</a></li>
-							<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contatti">Contatti</a></li>
+							<li class="nav-item text-uppercase"><a href="#progetti" class="nav-link py-3 px-0 px-lg-3 text-white rounded"><strong>Galleria progetti</strong></a></li>
+							<li class="nav-item text-uppercase"><a href="#chi-siamo" class="nav-link py-3 px-0 px-lg-3 text-white rounded"><strong>Chi siamo</strong></a></li>
+							<li class="nav-item text-uppercase"><a href="#contatti" class="nav-link py-3 px-0 px-lg-3 text-white rounded"><strong>Contatti</strong></a></li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</header>
-
-        <!-- Hero -->
-        <section class="text-white text-center" id="hero">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Hero avatar Image-->
-                <img class="mb-5" src="assets/img/user.svg" alt="Hero" />
-                <!-- Hero Heading-->
-                <h1 class="text-uppercase mx-2 mx-md-0">ITS Web Agency</h1>
-                <!-- Hero Icon Divider-->
-                <div class="divider-custom-icon text-center"><i class="fas fa-star"></i></div>
-                </div>
-                <!-- Hero Subheading-->
-                <p class="font-weight-light mx-2 mx-md-0">Programmatori - Sistemisti - Web Designer - Esperti di Cyber Security</p>
+		<!-- Hero -->
+		<section id="hero" class="bg-green text-white py-5">
+			<div class="container-fluid d-flex align-items-center flex-column py-5">
+				<!-- Hero avatar Image-->
+				<img src="user.svg" alt="Hero" class="img-fluid" style="max-width: 200px; "/>
+				<!-- Hero Heading-->
+				<h1 class="text-uppercase mt-4"><strong>ITS Web Agency</strong></h1>
+				<!-- Hero Icon Divider-->
+				<div class="divider-custom-icon text-center"><i class="fas fa-star"></i></div>
+				<!-- Hero Subheading-->
+				<p>Programmatori - Sistemisti - Web Designer - Esperti di Cyber Security</p>
+			</div>
+		</section>
+		<!-- Galleria progetti -->
+        <section class="py-5" id="progetti">
+            <div class="container"> 
+                <!-- Progetti Heading--> 
+                <h2 class="text-center fs-1 mt-0 text-uppercase"><strong>Galleria progetti</strong></h2> 
+                <!-- Progetti Icon Divider--> 
+                <div class="divider-custom-icon text-center"><i class="fas fa-star"></i></div> 
+                <!-- Progetti Grid Items--> 
+                <div class="row"> 
+                    <!-- Progetti Item 1--> 
+                    <div class="col-lg-4 mb-5 col-md-6"> 
+                        <a href="#portfolioModal1" data-bs-toggle="modal"> 
+                            <img src="cabin.png" alt="Baita" class="img-fluid rounded"/> 
+                        </a> 
+                    </div>
+                    <!-- Progetti Item 2--> 
+                    <div class="col-lg-4 mb-5 col-md-6"> 
+                        <a href="#portfolioModal2" data-bs-toggle="modal"> 
+                            <img src="cake.png" alt="Dolcetto" class="img-fluid rounded"/> 
+                        </a> 
+                    </div> 
+                    <!-- Progetti Item 3--> 
+                    <div class="col-lg-4 mb-5 col-md-6"> 
+                        <a href="#portfolioModal3" data-bs-toggle="modal"> 
+                            <img src="circus.png" alt="Tendone circo" class="img-fluid rounded"/> 
+                        </a> 
+                    </div> 
+                    <!-- Progetti Item 4--> 
+                    <div class="col-lg-4 mb-5 col-md-6"> 
+                        <a href="#portfolioModal4" data-bs-toggle="modal"> 
+                            <img src="game.png" alt="Controller" class="img-fluid rounde"/> 
+                        </a> 
+                    </div> 
+                    <!-- Progetti Item 5--> 
+                    <div class="col-lg-4 mb-5 col-md-6"> 
+                        <a href="#portfolioModal5" data-bs-toggle="modal"> 
+                            <img src="safe.png" alt="Cassaforte" class="img-fluid rounded"/> 
+                        </a> 
+                    </div> 
+                    <!-- Progetti Item 6--> 
+                    <div class="col-lg-4 mb-5 col-md-6"> 
+                        <a href="#portfolioModal6" data-bs-toggle="modal"> 
+                            <img src="submarine.png" alt="Sottomarino" class="img-fluid rounded"/> 
+                        </a> 
+                    </div>
+                </div> 
             </div>
         </section>
-        <!-- Galleria progetti -->
-        <section id="progetti">
-            <div class="container">
-                <!-- Progetti Heading-->
-                <h2 class="text-center text-uppercase mx-3">Galleria progetti</h2>
-                <!-- Progetti Icon Divider-->
-                <div class="divider-custom-icon text-center"><i class="fas fa-star"></i></div>
-                <!-- Progetti Grid Items-->
-                <div class="row gx-5 mx-2 mx-md-0 justify-content-center">
-                    <!-- Progetti Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <a class="portfolio-item mx-auto" data-bs-toggle="modal" href="#portfolioModal1">
-                            <img class="img-fluid rounded" src="assets/img/portfolio/cabin.png" alt="Baita" />
-                        </a>
-                    </div>
-                    <!-- Progetti Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <a class="portfolio-item mx-auto" data-bs-toggle="modal" href="#portfolioModal2">
-                            <img class="img-fluid rounded" src="assets/img/portfolio/cake.png" alt="Dolcetto" />
-                        </a>
-                    </div>
-                    <!-- Progetti Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <a class="portfolio-item mx-auto" data-bs-toggle="modal" href="#portfolioModal3">
-                            <img class="img-fluid rounded" src="assets/img/portfolio/circus.png" alt="Tendone circo" />
-                        </a>
-                    </div>
-                    <!-- Progetti Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <a class="portfolio-item mx-auto" data-bs-toggle="modal" href="#portfolioModal4">
-                            <img class="img-fluid rounded" src="assets/img/portfolio/game.png" alt="Controller" />
-                        </a>
-                    </div>
-                    <!-- Progetti Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <a class="portfolio-item mx-auto" data-bs-toggle="modal" href="#portfolioModal5">
-                            <img class="img-fluid rounded" src="assets/img/portfolio/safe.png" alt="Cassaforte" />
-                        </a>
-                    </div>
-                    <!-- Progetti Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <a class="portfolio-item mx-auto" data-bs-toggle="modal" href="#portfolioModal6">
-                            <img class="img-fluid rounded" src="assets/img/portfolio/submarine.png" alt="Sottomarino" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Chi siamo -->
-        <section class="text-white" id="chi-siamo">
-            <div class="container">
-                <!-- Chi siamo Heading-->
-                <h2 class="text-center text-uppercase text-white mx-3">Chi siamo</h2>
-                <!-- Chi siamo Icon Divider-->
-                <div class="divider-custom-icon text-center"><i class="fas fa-star"></i></div>
-                <!-- Chi siamo Content-->
-                <div class="row mx-2 mx-md-0">
-                    <div class="col-lg-4 ms-auto">
-					<p class="lead">Nulla dignissim, neque quis finibus sodales, nisl justo pellentesque tellus, at venenatis leo nunc eu tellus. Pellentesque posuere finibus eleifend. Donec fermentum laoreet lectus ultricies dignissim.</p>
+		<!-- Chi siamo -->
+		<section id="chi-siamo" class="bg-green text-white py-5">
+			<div class="container">
+				<!-- Chi siamo Heading-->
+				<h2 class="text-center text-uppercase"><strong>Chi siamo</strong></h2>
+				<!-- Chi siamo Icon Divider-->
+				<div class="text-center"><i class="fas fa-star mt-4"></i></div>
+				<!-- Chi siamo Content-->
+				<div class="row justify-content-center mt-4">
+					<div class="col-md-4">
+						<p class="lead mb-1">Nulla dignissim, neque quis finibus sodales, nisl justo pellentesque tellus, at venenatis leo nunc eu tellus. Pellentesque posuere finibus eleifend. Donec fermentum laoreet lectus ultricies dignissim.</p>
 					</div>
-                    <div class="col-lg-4 me-auto">
-					<p class="lead">Nam eget ornare dui, elementum luctus justo. Cras scelerisque libero enim, eu consectetur odio lacinia eget. Curabitur ultrices, augue et aliquet gravida, turpis urna iaculis odio, ullamcorper aliquam odio neque quis nibh.</p>
+					<div class="col-md-4">
+						<p class="lead mb-1">Nam eget ornare dui, elementum luctus justo. Cras scelerisque libero enim, eu consectetur odio lacinia eget. Curabitur ultrices, augue et aliquet gravida, turpis urna iaculis odio, ullamcorper aliquam odio neque quis nibh.</p>
 					</div>
-                </div>
-            </div>
-        </section>
-        <!-- Contatti -->
-        <section id="contatti">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="text-center text-uppercase mb-0 mx-3">Contatti</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom-icon text-center"><i class="fas fa-star"></i></div>
-                <!-- Contact Section Form-->
-                <div class="row mx-2 mx-md-0 justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <form id="contactForm" method="post">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Inserisci qui il tuo nominativo..." required />
-                                <label for="name">Nome e cognome</label>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="nome@example.com" required />
-                                <label for="email">Indirizzo e-mail</label>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="+39 123 4567890" required />
-                                <label for="phone">Numero di telefono</label>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Inserisci qui il tuo messaggio..." style="height: 10rem" required"></textarea>
-                                <label for="message">Messaggio</label>
-                            </div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Invia</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="text-center">
-            <div class="container">
-                <div class="row mx-2">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Dove siamo</h4>
-                        <p class="lead mb-0">
-                            Via Colonnetta, 124 
-                            <br />
-                            66100 Chieti CH
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Seguici, siamo social</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com"><i class="fab fa-fw fa-x-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://itsmeccanicabruzzo.eu/"><i class="fab fa-fw fa-dribbble"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">ITS Academy</h4>
-                        <p class="lead mb-0">
-                             <small>Istituto Tecnico Superiore Nuove Tecnologie per il Made in Italy Sistema Meccanica e Tecnologie dell’Informazione e della Comunicazione.</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; ITS Academy 2024</small></div>
-        </div>
+				</div>
+			</div>
+		</section>
+		<!-- Contatti -->
+		<section id="contatti" class="bg-white text-dark py-5">
+			<div class="container">
+				<!-- Contact Section Heading-->
+				<h2 class="text-center text-uppercase"><strong>Contatti</strong></h2>
+				<!-- Icon Divider-->
+				<div class="divider-custom-icon text-center mt-4"><i class="fas fa-star"></i></div>
+				<!-- Contact Section Form-->
+				<div class="row mt-4">
+					<div class="col-md-6 mx-auto">
+						<form id="contactForm" method="post">
+							<div class="form-floating mb-3">
+								<input type="text" class="form-control" id="name" placeholder="nominativo" required>
+								<label for="name">Inserisci qui il tuo nominativo...</label>
+							</div>
+							<div class="form-floating mb-3">
+								<input type="email" class="form-control" id="email" placeholder="email" required>
+								<label for="email">Inserisci qui il tuo indirizzo email...</label>
+							</div>
+							<div class="form-floating mb-3">
+								<input type="number" class="form-control" id="phone" placeholder="phone number" required>
+								<label for="phone">Inserisci qui il tuo numero di telefono...</label>
+							</div>
+							<div class="form-floating mb-3">
+								<textarea class="form-control" id="message" placeholder="messaggio" style="height: 100px" required></textarea>
+								<label for="message">Inserisci qui il tuo messaggio...</label>
+							</div>
+							<!-- Submit Button-->
+							<button type="submit" class="btn btn-light bg-green-aqua text-white text-uppercase"><strong>Invia</strong></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer-->
+		<footer class="custom-bg-color text-white py-5">
+			<div class="container text-center">
+				<div class="row">
+					<!-- Footer Location-->
+					<div class="col-md-4">
+						<h4 class="text-uppercase"><strong>Dove siamo</strong></h4><br>
+						<p>
+							Via Colonnetta, 124 
+							<br />
+							66100 Chieti CH
+						</p>
+					</div>
+					<!-- Footer Social Icons-->
+					<div class="col-md-4">
+						<h4 class="text-uppercase"><strong>Seguici, siamo social</strong></h4><br>
+						<a href="https://www.facebook.com" class="btn btn-outline-light text-white mx-1"><i class="fab fa-fw fa-facebook-f"></i></a>
+						<a href="https://www.twitter.com" class="btn btn-outline-light text-white mx-1"><i class="fab fa-fw fa-x-twitter"></i></a>
+						<a href="https://www.linkedin.com" class="btn btn-outline-light text-white mx-1"><i class="fab fa-fw fa-linkedin-in"></i></a>
+						<a href="https://itsmeccanicabruzzo.eu/" class="btn btn-outline-light text-white mx-1"><i class="fab fa-fw fa-dribbble"></i></a>
+					</div>
+					<!-- Footer About Text-->
+					<div class="col-md-4">
+						<h4 class="text-uppercase"><strong>ITS Academy</strong></h4><br>
+						<p>
+							<small>Istituto Tecnico Superiore Nuove Tecnologie per il<br> Made in Italy Sistema Meccanica e Tecnologie<br> dell’Informazione e della Comunicazione.</small>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="copyright-bg-color text-white py-2">
+			<div class="container text-center py-3">
+				<p class="m-0">Copyright &copy; <span id="year">ITS Academy</span> 2024</p>
+			</div>
+		</div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
         <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
@@ -211,7 +216,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 col-7" src="assets/img/portfolio/cabin.png" alt="Baita" />
+                                    <img class="img-fluid rounded mb-5 col-7" src="cabin.png" alt="Baita" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -228,7 +233,7 @@
         <!-- Portfolio Modal 2-->
         <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content modal-dialog-centered">
+                <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Chiudi"></button></div>
                     <div class="modal-body text-center pb-5">
                         <div class="container">
@@ -243,7 +248,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 col-7" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5 col-7" src="cake.png" alt="Baita" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -275,7 +280,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 col-7" src="assets/img/portfolio/circus.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5 col-7" src="circus.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -307,7 +312,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 col-7" src="assets/img/portfolio/game.png" alt="Controller" />
+                                    <img class="img-fluid rounded mb-5 col-7" src="game.png" alt="Controller" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -339,7 +344,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 col-7" src="assets/img/portfolio/safe.png" alt="Cassaforte" />
+                                    <img class="img-fluid rounded mb-5 col-7" src="safe.png" alt="Cassaforte" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -371,7 +376,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 col-7" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5 col-7" src="submarine.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -385,8 +390,7 @@
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
+		<!-- Bootstrap core JS -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+	</body>
 </html>
-
