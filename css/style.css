@@ -71,6 +71,10 @@ b {
 	font-size: 25px;
 }
 
+.photoprofile{
+	pointer-events: none;
+}
+
 #hero h1 {
 	font-size: 2.75rem;
 	line-height: 2.75rem;
