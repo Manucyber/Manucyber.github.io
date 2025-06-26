@@ -5,7 +5,6 @@ html, body {
 	font-size: 16px;
 }
 
-
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,7 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4 {
 	font-weight: 700;
 }
-
 
 /* Header section */
 
@@ -28,7 +26,6 @@ header .navbar-brand:hover,
 header .nav-link:hover {
 	color: #000000;
 }
-
 
 header .nav-link:active,
 header .navbar-toggler {
@@ -128,7 +125,6 @@ footer h4 {
 	background-color: #1a252f;
 }
 
-
 /* Divider */
 
 .divider-custom-icon {
@@ -136,18 +132,15 @@ footer h4 {
 	margin: 1.5rem 0 2rem;
 }
 
-
 /* Media query */
 
-@media screen (min-width: 1200px) {
-	
+@media screen and (min-width: 1200px) {
 	footer h4 {
 		font-size: 1.5rem;
 	}	
 }
 
-
-@media screen (min-width: 992px) {
+@media screen and (min-width: 992px) {
 
 	#mainNav .navbar-brand {
 		font-size: 1.75em;
@@ -162,5 +155,7 @@ footer h4 {
 	#hero h1 {
 		font-size: 4rem;
 		line-height: 3.5rem;
+
+		  
 	}
 }
